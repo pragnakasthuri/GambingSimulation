@@ -26,6 +26,7 @@ public class GamblerUC2 {
 
         System.out.println("Please enter the amount you want to bet for every game :");
         int betAmount = inputScanner.nextInt();
+        inputScanner.close();
 
         /*
             Using while case to check the gambler is win or loss
@@ -33,7 +34,7 @@ public class GamblerUC2 {
         if (isPlayerWonTheGame()) {
             System.out.println("You won the game! Your profit is $1.");
         } else {
-            System.out.println("You won the game! Your profit is $1.");
+            System.out.println("You lost the game! Your loss is $1.");
         }
     }
 }
