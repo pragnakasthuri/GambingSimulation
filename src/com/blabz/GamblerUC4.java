@@ -28,8 +28,8 @@ public class GamblerUC4 {
         int betAmount = inputScanner.nextInt();
         inputScanner.close();
 
-        /*
-            Using while loop to calculate Gambler if won or lost 50% of the stake, would resign for the day
+        /**
+         * Using while loop to calculate Gambler if won or lost 50% of the stake, would resign for the day
          */
         int totalAmount = stakeAmount;
         for (int i = 0; i <= 20; i++) {
