@@ -14,11 +14,11 @@ public class GamblerUC4 {
 
     public static void main(String[] args) {
         /**
-        Taking Scanner class to take input from user
+        *Taking Scanner class to take input from user
         */
         Scanner inputScanner = new Scanner(System.in);
         /**
-        Taking two values stake Amount and bet amount from user
+        *Taking two values stake Amount and bet amount from user
         and storing in stakeAmount and betAmount as int value
          */
         System.out.println("Please enter the stake amount :");
@@ -29,7 +29,7 @@ public class GamblerUC4 {
         inputScanner.close();
 
         int totalAmount = stakeAmount;
-        for (int i = 0; i <= 20; i++) {
+        for (int i = 1; i <= 20; i++) {
             int profit = 0;
             int loss = 0;
             int fiftyPercentOfStakeAmount = stakeAmount / 2;
@@ -52,3 +52,7 @@ public class GamblerUC4 {
         System.out.println("Total Profit/loss after 20 days is :" +(totalAmount - stakeAmount));
     }
 }
+
+
+
+

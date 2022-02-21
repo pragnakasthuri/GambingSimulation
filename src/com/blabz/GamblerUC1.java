@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class GamblerUC1 {
     public static void main(String[] args) {
-    /**
-    Taking Scanner class to take input from user
-     */
         Scanner inputScanner = new Scanner(System.in);
 
         System.out.println("Please enter the stake amount :");

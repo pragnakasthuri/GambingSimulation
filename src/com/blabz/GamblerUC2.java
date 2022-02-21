@@ -15,7 +15,7 @@ public class GamblerUC2 {
 
     public static void main(String[] args) {
         /**
-        Taking Scanner class to take input from user
+        *Taking Scanner class to take input from user
         */
         Scanner inputScanner = new Scanner(System.in);
 
@@ -27,7 +27,7 @@ public class GamblerUC2 {
         inputScanner.close();
 
         /**
-            Using while loop to check the gambler is won or loss
+        * Using while loop to check the gambler is won or loss
         */
         if (isPlayerWonTheGame()) {
             System.out.println("You won the game! Your profit is $1.");
