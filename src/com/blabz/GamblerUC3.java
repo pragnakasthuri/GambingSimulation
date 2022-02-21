@@ -4,23 +4,19 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GamblerUC3 {
-    /*
-        Writing randomNumber() method to give random number using Random class
-    */
+    /**
+     * @return boolean
+     */
     public static boolean isPlayerWonTheGame() {
         Random random = new Random();
         return random.nextInt(2) == 1;
     }
 
     public static void main(String[] args) {
-    /*
-    Taking Scanner class to take input from user
-     */
+        /**
+        Taking Scanner class to take input from user
+        */
         Scanner inputScanner = new Scanner(System.in);
-        /*
-        Taking two values stake Amount and bet amount from user
-        and storing in stakeAmount and betAmount as int value
-         */
         System.out.println("Please enter the stake amount :");
         int stakeAmount = inputScanner.nextInt();
 
@@ -28,9 +24,9 @@ public class GamblerUC3 {
         int betAmount = inputScanner.nextInt();
         inputScanner.close();
 
-        /*
-            Using while loop to calculate Gambler if won or lost 50% of the stake, would resign for the day
-         */
+        /**
+        Using do while loop to calculate Gambler if won or lost 50% of the stake, would resign for the day
+        */
         int profit = 0;
         int loss = 0;
         int fiftyPercentOfStakeAmount = stakeAmount / 2;

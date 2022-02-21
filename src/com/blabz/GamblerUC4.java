@@ -4,20 +4,20 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class GamblerUC4 {
-    /*
-        Writing randomNumber() method to give random number using Random class
-    */
+    /**
+     * @return boolean true if won
+     */
     public static boolean isPlayerWonTheGame() {
         Random random = new Random();
         return random.nextInt(2) == 1;
     }
 
     public static void main(String[] args) {
-    /*
-    Taking Scanner class to take input from user
-     */
+        /**
+        Taking Scanner class to take input from user
+        */
         Scanner inputScanner = new Scanner(System.in);
-        /*
+        /**
         Taking two values stake Amount and bet amount from user
         and storing in stakeAmount and betAmount as int value
          */
@@ -28,9 +28,6 @@ public class GamblerUC4 {
         int betAmount = inputScanner.nextInt();
         inputScanner.close();
 
-        /*
-            Using while loop to calculate Gambler if won or lost 50% of the stake, would resign for the day
-         */
         int totalAmount = stakeAmount;
         for (int i = 0; i <= 20; i++) {
             int profit = 0;
@@ -52,6 +49,6 @@ public class GamblerUC4 {
                 }
             } while (profit <= fiftyPercentOfStakeAmount || loss <= fiftyPercentOfStakeAmount);
         }
-        System.out.println("Total Profit/loss after 20 days is :" +(stakeAmount - totalAmount));
+        System.out.println("Total Profit/loss after 20 days is :" +(totalAmount - stakeAmount));
     }
 }
